@@ -30,4 +30,4 @@ What I had to do to get this to work is as follows:
 <br>
 5) Set an alias to the file itself, e.g. alias AS='/home/testing/plugdj/song-search' which allows me to call the file wherever I am in my OS.
 
-Viola, if you followed the above and then renamed the /input/directory/here directory inside of the searchsong.git file, you should be able to utilize this feature to search all your .json songs that were exported from plug.dj or dubtrack.fm. 
+Viola, if you followed the above and then renamed the /input/path/here directory inside of the searchsong.git file, you should be able to utilize this feature to search all your .json songs that were exported from plug.dj or dubtrack.fm. 
