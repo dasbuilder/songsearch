@@ -1,6 +1,6 @@
 This git should only be used if you want to take a bunch of .json files, search through them and then find a particular artist or 
 song title within these files. Dubtrack.fm has no mass playlist search or filter so this will work only if you use this bookmarklet managed by JTBrinkmann https://github.com/JTBrinkmann/Dubtrack-Playlist-Pusher
-Here's an example of how things look when something is searched: <a href="http://termbin.com/gr1a" target="_blank">Above & Beyond search example</a>
+Here's an example of how things look when something is searched: <a href="http://termbin.com/gr1a" target="_top">Above & Beyond search example</a>
 
 What I had to do to get this to work is as follows:<br>
 1) Install the bookmarklet<br>
