@@ -1,5 +1,7 @@
 This git should only be used if you want to take a bunch of .json files, search through them and then find a particular artist or 
 song title within these files. Dubtrack.fm has no mass playlist search or filter so this will work only if you use this bookmarklet managed by JTBrinkmann https://github.com/JTBrinkmann/Dubtrack-Playlist-Pusher
+Here's an example of how things look when something is searched: http://termbin.com/gr1a
+
 What I had to do to get this to work is as follows:
 1) Install the bookmarlket<br>
 2) Download all my Dubtrack.fm playlists<br>
@@ -30,4 +32,5 @@ What I had to do to get this to work is as follows:
 <br>
 5) Set an alias to the file itself, e.g. alias AS='/home/testing/plugdj/song-search' which allows me to call the file wherever I am in my OS.
 
-Viola, if you followed the above and then renamed the /input/path/here directory inside of the searchsong.git file, you should be able to utilize this feature to search all your .json songs that were exported from plug.dj or dubtrack.fm. 
+Viola, if you followed the above and then renamed the /input/path/here directory inside of the searchsong.sh file, you should be able to utilize this feature to search all your .json songs that were exported from plug.dj or dubtrack.fm. Keep in mind that you might have to tailor the settings based on your env. 
+I also use the IFS at the beginning to ensure that the output looks clean. 
