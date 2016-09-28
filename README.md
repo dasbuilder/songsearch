@@ -5,7 +5,7 @@ What I had to do to get this to work is as follows:
 2) Download all my Dubtrack.fm playlists
 3) Upload them to my server (optional, not necessary if you're running a Linux distro as your main - I'm running Windows so my server sufficed)
 4) Store all .json files within a certain diretory. Here's an output of what I have stored after unzipping my files:
--rw-r--r-- 1 testing testing 11302 Apr 17 03:10 138?.json
+-rw-r--r-- 1 testing testing 11302 Apr 17 03:10 138?.json<br>
 -rw-r--r-- 1 testing testing 46405 Apr 17 03:10 blurb.json
 -rw-r--r-- 1 testing testing 17557 Apr 17 03:10 chill\ (NBC,\ Nothing\ but\ Chill).json
 -rw-r--r-- 1 testing testing   525 Apr 17 03:10 Deep-TechHouse.json
