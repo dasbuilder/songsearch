@@ -2,8 +2,8 @@ This git should only be used if you want to take a bunch of .json files, search 
 song title within these files. Dubtrack.fm has no mass playlist search or filter so this will work only if you use this bookmarklet managed by JTBrinkmann https://github.com/JTBrinkmann/Dubtrack-Playlist-Pusher
 Here's an example of how things look when something is searched: http://termbin.com/gr1a
 
-What I had to do to get this to work is as follows:
-1) Install the bookmarlket<br>
+What I had to do to get this to work is as follows:<br>
+1) Install the bookmarklet<br>
 2) Download all my Dubtrack.fm playlists<br>
 3) Upload them to my server (optional, not necessary if you're running a Linux distro as your main - I'm running Windows so my server sufficed)<br>
 4) Store all .json files within a certain diretory. Here's an output of what I have stored after unzipping my files:<br>
