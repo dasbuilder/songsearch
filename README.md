@@ -2,8 +2,10 @@ This git should only be used if you want to take a bunch of .json files, search 
 song title within these files. Dubtrack.fm has no mass playlist search or filter so this will work only if you use this bookmarklet managed by JTBrinkmann https://github.com/JTBrinkmann/Dubtrack-Playlist-Pusher
 Here's an example of how things look when something is searched: <a href="http://termbin.com/gr1a" target="_top">Above & Beyond search example</a>
 
+One thing I should mention before you read any further, is that my playlist search feature currently works for me with the following string, but keep in mind that the field value for cut (f6 in this case) will have to be adjusted depending on your directory setup. In the song-search.sh file you will see that the format is a little different (still the same function) but what's most important is the cut -d\/ -f5 which needs to be changed to -f(n) where "n" is the number of directories:<br>
+    find /home/groot/testing/plugdj/ -type f -exec grep -ioHP '[^"\{\}]*"title":"([^"]+)"' {} \; | sed 's/\.json//g' | tr ':,' ' ' | cut -d\/ -f6 | awk -F\" '{ print $1":"$4}' | grep -i $tittle<br>
 What I had to do to get this to work is as follows:<br>
-1) Install the bookmarklet<br>
+1) Install the bookmarklet from JTBrinkman, mentioned above<br>
 2) Download all my Dubtrack.fm playlists<br>
 3) Upload them to my server (optional, not necessary if you're running a Linux distro as your main - I'm running Windows so my server sufficed)<br>
 4) Store all .json files within a certain diretory. Here's an output of what I have stored after unzipping my files:<br>
