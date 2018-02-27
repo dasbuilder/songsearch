@@ -22,7 +22,7 @@ dtPlaylistChk(){
    
    # Grep for the artist or song title and replace any translated characters
    grep -i "${songinfo}" | 
-   gsed -r "s_(&amp;)_\\&_g; s_(&apos;)_\\'_g" | 
+   gsed -r "s_(&amp;)_\\&_g; s_(&apos;)_\\'_g; s_(&quot;)_\\"_g" | 
    # Loop to take data from jq and neatly print
    while IFS='%' read -r filename responses titles; do 
       printf "%s\n%s %s\n\v" \
@@ -31,3 +31,5 @@ dtPlaylistChk(){
              sleep .5; 
     done;
  }
+
+dtPlaylistChk
